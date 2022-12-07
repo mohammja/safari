@@ -9,6 +9,7 @@ const {
     updateProduct
 } = require('../controllers/productController')
 
+const router = express.Router();
 // GET all products
 router.get('/', getProducts)
 

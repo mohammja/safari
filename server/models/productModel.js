@@ -3,10 +3,12 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const productSchema = new Schema({
+  /*
   _id: {
     type: Number,
     required: true
   },
+  */
   name: {
     type: String,
     required: true
@@ -24,10 +26,8 @@ const productSchema = new Schema({
     required: true
   },
   photo: {
-    filename: {
       type: String,
       required: true
-    }
   },
   details: [
     {
